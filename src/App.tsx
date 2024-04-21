@@ -1,25 +1,24 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Suggestions from "./suggestions/suggestions";
+import Main from "./main/main";
+import Links from "./links/links";
+import Members from './members/members'
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="row mx-0 my-4 px-0 py-0" style={{height: "fitContent"}}>
+        <Suggestions />
+        <Main />
+        <Links />
+        
+      </div>
+      <div className="text-center">
+        <p className="fw-bold fs-2">Members</p>
+      </div>
+      <div className="container-fluid mx-0 my-4 px-0 py-0  d-flex d-flex justify-content-between" style={{height: "fitContent"}}>
+        <Members />
+      </div>
+    </>
   );
 }
 
