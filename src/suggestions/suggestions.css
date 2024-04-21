@@ -1,11 +1,7 @@
-.custom-div-container{
-    padding: 0px;
-}
 .custom-button-style{
     border-radius: 20px;
     border: 3px solid hsl(0, 0%, 80%);
     height: fit-content;
-    border-radius: 20px;
     cursor: pointer;
     transition: 0.25s;
 }

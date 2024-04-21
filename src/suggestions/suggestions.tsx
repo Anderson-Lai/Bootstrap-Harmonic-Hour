@@ -21,11 +21,11 @@ export default function Suggestions(){
 
     return(
         // 3 + main + link = 12, this function is inside a div with className="row"
-        <div className="col-md-3 d-flex flex-column align-items-center justify-content-center custom-div-container">
-            <p className="fw-bold mx-0 fs-2 mb-4">
+        <div className="col-md-3 d-flex flex-column align-items-center justify-content-center text-center">
+            <p className="fw-bold mx-0 fs-2 mb-3">
                 Send us suggestions!
             </p>
-            <p className="mb-0 fs-5 mb-4">Email us:</p>
+            <p className="mb-0 fs-5 mb-2">Email us:</p>
             <p className='fs-5'>{email}</p>
             <button className="fs-4 btn btn-dark py-1 px-2 custom-button-style" onClick={(e) => handleClick(e)}
                 onMouseOut={(e) => handleMouseOut(e)}>

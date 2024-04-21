@@ -6,16 +6,15 @@ import Members from './members/members'
 function App() {
   return (
     <>
-      <div className="row mx-0 my-4 px-0 py-0" style={{height: "fitContent"}}>
+      <div className="row mx-0 mt-3 mb-4 px-0 py-0" style={{height: "fitContent"}}>
         <Suggestions />
         <Main />
-        <Links />
-        
+        <Links /> 
       </div>
-      <div className="text-center">
+      <div className="text-center m-0">
         <p className="fw-bold fs-2">Members</p>
       </div>
-      <div className="container-fluid mx-0 my-4 px-0 py-0  d-flex d-flex justify-content-between" style={{height: "fitContent"}}>
+      <div className="container-fluid mx-0 my-0 px-0 py-0  d-flex justify-content-between" style={{height: "fitContent"}}>
         <Members />
       </div>
     </>
