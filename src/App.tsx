@@ -17,7 +17,7 @@ type hrefTypes = {
 
 function App() {
 
-  const desc: descTypes  = {
+  const desc: descTypes = {
     remy: "hi i’m remy, the mother of this podcast, everything we say is sort of a joke, " + 
           "otherwise i like playing the saxophone, ukulele, piano, my harmonica. " + 
           "u can find me editing videos on my free time or listening to some jazz, " +
