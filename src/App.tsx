@@ -15,6 +15,11 @@ type hrefTypes = {
   instagram: string,
 }
 
+type gradientTypes = {
+  spotify: string,
+  instagram: string,
+}
+
 function App() {
 
   const desc: descTypes = {
@@ -43,6 +48,11 @@ function App() {
     instagram: "https://www.instagram.com/theharmonichour/",
   };
 
+  const gradient: gradientTypes = {
+    spotify: "linear-gradient(120deg, #1db954, #191414)",
+    instagram: "linear-gradient(135deg, #f9ce34, #ee2a7b, #6228d7)",
+  }
+
   return (
     <>
       <div className="row mx-0 mt-3 mb-4 px-0 py-0" style={{height: "fitContent"}}>
@@ -50,8 +60,8 @@ function App() {
         <Main />
         <div className="col-md-3 d-flex flex-column align-items-center justify-content-center text-center">
           <p className='fw-bold fs-1'>Find us on:</p>
-          <Links cssId="spotify-button" name="Spotify" href={href.spotify}/> 
-          <Links cssId="instagram-button" name="Instagram" href={href.instagram}/> 
+          <Links gradient={gradient.spotify} name="Spotify" href={href.spotify} /> 
+          <Links gradient={gradient.instagram} name="Instagram" href={href.instagram} /> 
         </div>
       </div>
       <div className="text-center m-0">
