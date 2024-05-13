@@ -55,7 +55,7 @@ function App() {
 
   return (
     <>
-      <div className="row mx-0 mt-3 mb-4 px-0 py-0" style={{height: "fitContent"}}>
+      <div className="row mx-0 mt-3 mb-4 px-0 py-0">
         <Suggestions />
         <Main />
         <div className="col-md-3 d-flex flex-column align-items-center justify-content-center text-center">
@@ -64,16 +64,12 @@ function App() {
           <Links gradient={gradient.instagram} name="Instagram" href={href.instagram} /> 
         </div>
       </div>
-      <div className="text-center m-0">
-        <p className="fw-bold fs-2">Members</p>
-      </div>
-      <div className="container-fluid mx-0 my-0 px-0 py-0  d-flex justify-content-between" style={{height: "fitContent"}}>
-        <div className='row m-0 px-3 py-0'>
-          <Members alt="remy" image="member-images/remy.jpg" desc={desc.remy} />
-          <Members alt="anderson" image="member-images/andy.jpg" desc={desc.andy} />
-          <Members alt="lucas" image="member-images/lucas.jpg" desc={desc.lucas} />
-          <Members alt="isaac" image="member-images/isaac.jpg" desc={desc.isaac} />
-        </div>
+      <p className="fw-bold fs-2 text-center">Members</p>
+      <div className='row m-0 px-3 py-0 d-flex justify-content-between'>
+        <Members alt="remy" image="member-images/remy.jpg" desc={desc.remy} />
+        <Members alt="anderson" image="member-images/andy.jpg" desc={desc.andy} />
+        <Members alt="lucas" image="member-images/lucas.jpg" desc={desc.lucas} />
+        <Members alt="isaac" image="member-images/isaac.jpg" desc={desc.isaac} />
       </div>
     </>
   );
