@@ -20,7 +20,6 @@ export default function Suggestions(){
     }
 
     return(
-        // 3 + main + link = 12, this function is inside a div with className="row"
         <div className="col-md-3 d-flex flex-column align-items-center justify-content-center text-center">
             <p className="fw-bold mx-0 fs-2 mb-3">
                 Send us suggestions!

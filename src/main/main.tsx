@@ -11,7 +11,7 @@ export default function Main(){
             <p className="mb-3" style={{fontSize: "1.15em"}}>
                 A fun loving podcast from high school musicians discussing about topics from classical to modern genres
             </p>
-            <img src={require("./harmonichour.png")} alt="logo" style={{maxWidth: "45%"}}></img>
+            <img src="general-images/harmonichour.png" alt="logo" style={{maxWidth: "45%"}}></img>
         </div>
     )
 }
